@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the CSS  -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/bookASeat.css">
+    <!-- The browser tab icon -->
+    <link rel="icon" href="Pictures/Icons/Logo.jpg">
+    <title>GYM Fit :: Book A Seat</title>
+</head>
+
+<body>
+
+    <!-- The HEADER of the page -->
+    <header class="site-header">
+        <a href="index.html" class="header-logo">
+            <img src="pictures/Logo.png" alt="LOGO" class="logo">
+            <span class="logo_text">GYM FIT</span>
+        </a>
+
+        <!-- The NAVIGATION BAR -->
+        <nav class="main-nav">
+            <ul>
+                <div class="topnav" id="navBar">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li> 
+                        <a href="trainings.html">TRAININGS</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <!-- To make the bars functional that appear when the max width is 600px-->
+        <a onclick="showNavBars()"> 
+            <img src="Pictures/Icons/bars.png" alt="Bars" class="bars"> 
+        </a>
+    </header>
+
+    <!-- The MAIN BODY PART -->
+    <main>
+
+        <!-- The BACK ARROW to return -->
+        <section>
+            <a href="trainings.html">
+                <div class="back">
+                    <img src="Pictures/Icons/back-arrow.svg" alt="Back-Arrow">
+                    <h3>Back</h3>
+                </div>
+            </a>
+        </section>
+
+        <!-- the BOOKING SEAT FORM -->
+        <section>
+            <form method="POST" id="bookASeatForm">
+                <h1>BOOK YOUR SEAT NOW!!!</h1>
+                <input type="text" placeholder="First Name" id="fname" required>
+                <input type="text" placeholder="Last Name" id="lname" required>
+                <input type="email" placeholder="Email Address" id="email" required>
+                <input type="tel" maxlength="10" placeholder="Contact Number" id="phnum" required>
+
+                <div class="gender">
+                    <div class="chooseGender">
+                        <input type="radio" name="gender" value="Male">
+                        <label>Male</label>
+                    </div>
+                    <div class="chooseGender">
+                        <input type="radio" name="gender" value="Female">
+                        <label>Female</label>
+                    </div>
+                    <div class="chooseGender">
+                        <input type="radio" name="gender" value="Others">
+                        <label>Others</label>
+                    </div>
+                </div>
+
+                <div class="classType">
+                    <label for="class" style="display: block; color: #E74C32">
+                        Choose your class: 
+                    </label>
+                    <div class="typeOfClass">
+                        <input type="checkbox" name="class" value="Yoga">
+                        <label>Yoga</label>
+                    </div>
+                    <div class="typeOfClass">
+                        <input type="checkbox" name="class" value="Zumba">
+                        <label>Zumba</label>
+                    </div>
+                    <div class="typeOfClass">
+                        <input type="checkbox" name="class" value="Cardio">
+                        <label>Cardio</label>
+                    </div>
+                    <div class="typeOfClass">
+                        <input type="checkbox" name="class" value="Basic-GYM">
+                        <label>Basic-GYM</label>
+                    </div>
+                    <div class="typeOfClass">
+                        <input type="checkbox" name="class" value="Kick-Boxing">
+                        <label>Kick Boxing</label>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <label for="date" style="display: block; color: #E74C32">
+                        Booking for Date :
+                    </label>
+                    <input type="date" name="date">
+                </div>
+
+            
+                <div class="time">
+                    <div class="timing">
+                        <input type="checkbox" name="time" value="6:00 am - 8:00 am">
+                        <label>6:00 am - 8:00 am</label>
+                    </div>
+                    <div class="timing">
+                        <input type="checkbox" name="time" value="8:00 am - 11:00 am">
+                        <label>8:00 am - 11:00 am</label>
+                    </div>
+                    <div class="timing">
+                        <input type="checkbox" name="time" value="3:00 pm - 5:00 pm">
+                        <label>3:00 pm - 5:00 pm</label>
+                    </div>
+                    <div class="timing">
+                        <input type="checkbox" name="time" value="5:00 pm - 7:00 pm">
+                        <label>5:00 pm - 7:00 pm</label>
+                    </div>
+                </div>
+                
+
+                <div class="bookButton">
+                    <button type="submit">Book Seat</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- The CLASSES Table that gives info of the classes happening on the wekdays -->
+        <section>
+            <table> 
+                <thead>
+                    <tr>
+                        <th>Day/Time</th>
+                        <th>06:00 am - 08:00 am</th>
+                        <th>08:00 am - 11:00 am</th>
+                        <th>03:00 pm - 05:00 pm</th>
+                        <th>05:00 pm - 07:00 pm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="table_day">Sunday</td>
+                        <td>Yoga</td>
+                        <td>Zumba</td>
+                        <td>Cardio</td>
+                        <td>Basic GYM</td>
+                    </tr>
+                    <tr>
+                        <td class="table_day">Monday</td>
+                        <td>Yoga</td>
+                        <td>Basic GYM</td>
+                        <td>Kick-Boxing</td>
+                        <td>Zumba</td>
+                    </tr>
+                    <tr>
+                        <td class="table_day">Tuesday</td>
+                        <td>Yoga</td>
+                        <td>Cardio</td>
+                        <td>Zumba</td>
+                        <td>Kick-Boxing</td>
+                    </tr>
+                    <tr>
+                        <td class="table_day">Wednesday</td>
+                        <td>Yoga</td>
+                        <td>Kick-Boxing</td>
+                        <td>Basic GYM</td>
+                        <td>Zumba</td>
+                    </tr>
+                    <tr>
+                        <td class="table_day">Thursday</td>
+                        <td>Yoga</td>
+                        <td>Zumba</td>
+                        <td>Cardio</td>
+                        <td>Basic GYM</td>
+                    </tr>
+                    <tr>
+                        <td class="table_day">Friday</td>
+                        <td>Yoga</td>
+                        <td>Cardio</td>
+                        <td>Kick-Boxing</td>
+                        <td>Zumba</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+  
+
+    <!-- The FOOTER of the page -->
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li><a href="aboutus.html#GYMFitGallery">GALLERY </a></li>
+                <li><a href="trainings.html#trainings-container">TRAININGS </a></li>
+                <li><a href="trainings.html#packages-container">PACKAGES </a></li>
+                <li><a href="membership.html">MEMBERSHIP </a></li>
+                <li><a href="aboutus.html#trainers">TRAINERS </a></li>
+                <li><a href="shop.html#shop-nutrition">NUTRITION </a></li>
+                <li><a href="shop.html#shop-equipment">EQUIPMENT </a></li>
+            </ul>
+            <a href="bookASeat.html">
+                <h2>BOOK YOUR SEAT NOW!!!</h2>
+            </a>
+        </div>   
+
+        <div class="footer-mid">
+            <div class="footer-mid-left footer-mid-size">
+                <h3>CONNECT WITH US</h3>
+                <!-- social media links that open in a new tab -->
+                <a href="https://www.facebook.com" target="_blank"><img src="Pictures/Icons/facebook.png" alt="fb icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Pictures/Icons/instagram.png" alt="insta icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Pictures/Icons/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pictures/Icons/pinterest.png" alt="pinterest icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="Pictures/Icons/linked in.png" alt="linked in icon"></a>
+            </div>
+
+            <form class="footer-mid-center footer-mid-size" id="emailForNewsletter">
+                <h3>Subscribe to our NEWSLETTER!</h3>
+                <input type="email" placeholder="Your email here..." id="newsletterEmail">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="footer-mid-right footer-mid-size">
+                <h1>GYM FIT</h1>
+                <h3>Lazimpat, Kathmandu</h3>
+                <h3>+977-9818-975-368</h3>
+            </div>
+        </div>
+ 
+        <div class="footer-bottom">
+            <span>&copy; Copyright 2020. </span>
+            <span style="font-family: 'Audiowide';"> [GYM FIT] </span>
+            <span>, All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+    <!-- Linking the JavaScript files -->
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="JavaScript/gymfit.js"></script>
+    <script src="JavaScript/bookASeat.js"></script>
+    
+</body>
+</html>

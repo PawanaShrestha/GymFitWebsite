@@ -1,0 +1,63 @@
+/* CSS for login form */
+
+/* The body with a background image as parallax */
+body{
+    background-image: url("../Pictures/thegym.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+ 
+#login-form{
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 50%;
+    border-radius: 20px;
+    padding: 3% 4%;
+    margin: 130px auto 5% auto;
+}
+
+#login-form h2{
+    color: #E74C32;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 4%;
+}
+ 
+input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 2% auto;
+    border: none;
+}
+
+button{
+    display: block;
+    background-color: #E74C32;
+    padding: 3% 10%;
+    margin: 5% auto 0 auto;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: large;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: #f70C;
+    padding: 3% 16%;
+}
+
+#login-form h3{
+    color: #fff;
+    margin-top: 40px;
+}
+
+#login-form h3 a{
+    color: #E74C32;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+#login-form h3 a:hover{
+    color: #FFBA08;
+}

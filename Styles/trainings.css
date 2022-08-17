@@ -1,0 +1,222 @@
+/* Style Sheet for the Trainings page */
+
+/* The top container having a parallax background */
+.top-container-bg{
+    background-image: url("../Pictures/rope.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-container{
+    background-color: rgba(33, 33, 33, 0.5);
+    padding: 130px 0 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top-container h1{
+    font-family: 'Audiowide', cursive;
+    padding: 12px;
+    color: #000;
+    border-bottom: 3px solid #E74C32;
+    margin-bottom: 12px; 
+}
+
+.top-container img{
+    height: 200px;
+    width: 200px;
+    border: 1px solid #E74C32;
+    -webkit-filter: drop-shadow(4px 4px 3px #E74C32);
+            filter: drop-shadow(4px 4px 3px #E74C32);
+}
+
+.trainings-box, .packages-box, .book-a-seat-box, .membership-box{
+    display: inline-block;
+    background-color: rgba(181, 194, 183, 0.7);
+    padding: 32px 20px;
+    -webkit-flex: 10%;
+            flex: 10%;
+    margin: 10px 15px 25px 15px;
+    border-radius: 10px;
+} 
+
+.trainings-box ol, .packages-box ol, .book-a-seat-box ul{
+    text-align: left;
+    margin-left: 32%;
+}
+
+.scroll-down{
+    display: inline-block;
+    transition: .5s ease;
+    color: #000;
+    font-weight: bold;
+    background-color: #FFC857;
+    border: 2px solid #fff;
+    padding: 8px 12px;
+    margin-top: 20px;
+}
+
+.scroll-down:hover{
+    -webkit-filter: drop-shadow(4px 4px 3px #fff);
+            filter: drop-shadow(4px 4px 3px #fff);
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    background-color: #E74C32;
+    color: #fff;
+}
+
+/* Setting the background image to be a parallax */
+.image{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Setting the background images */
+.yoga .image{
+    background-image: url("../Pictures/yoga1.jpg");
+}
+
+.zumba .image{
+    background-image: url("../Pictures/zumba.jpg");
+}
+
+.cardio .image{
+    background-image: url("../Pictures/cardio.jpg");
+}
+
+.kickboxing .image{
+    background-image: url("../Pictures/kickbox.jpg");
+}
+
+.basicgym .image{
+    background-image: url("../Pictures/basicgym.jpg");
+}
+
+#trainings-container h2, #packages-container h2{
+    color: #fff;
+    font-size: 500%;
+    letter-spacing: 10px;
+    width: 48%;
+    display: inline-block;
+}
+
+#trainings-container p, #packages-container p{
+    width: 48%;
+    display: inline-block;
+    line-height: 300%;
+    background-color: rgba(255, 200, 87, 0.8);
+    padding: 50px;
+    margin: 150px auto;
+}
+
+.divider{
+    background-color: #212121;
+    color: #E74C32;
+    font-family: 'Audiowide', cursive;
+    padding: 1.8% 30%;
+    letter-spacing: 3px;
+} 
+
+.divider h3{
+    padding: 20px 50px;
+    border-right: 12px solid #FFC857;
+    border-left: 12px solid #FFC857;
+}
+
+/* Setting the background image */
+.beginner .image{
+    background-image: url("../Pictures/beginner.jpg");
+}
+
+.marathon .image{
+    background-image: url("../Pictures/marathon.jpg");
+}
+
+.weightloss .image{
+    background-image: url("../Pictures/weightloss.jpg");
+}
+
+.bootcamp .image{
+    background-image: url("../Pictures/bootcamp.jpg");
+}
+
+ 
+
+
+
+/* CSS to be applied when the max width of the window is 1200px */
+@media screen and (max-width:1200px){
+    .trainings-box, .packages-box, .book-a-seat-box, .membership-box{
+        -webkit-flex: 45%;
+                flex: 45%;
+    }
+
+    .top-container img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #trainings-container h2, #packages-container h2{
+        width: 80%;
+        font-size: 400%;
+        letter-spacing: 7px;
+        margin: 50px auto;
+    }
+    
+    #trainings-container p, #packages-container p{
+        width: 80%;
+        line-height: 250%;
+        padding: 40px;
+        margin: 80px auto;
+    }
+    
+    .divider h3{
+        padding: 18px 40px;
+        border-right: 10px solid #FFC857;
+        border-left: 10px solid #FFC857;
+    }
+}
+
+
+
+
+/* CSS to be applied when the max width of the window is 600px */
+@media screen and (max-width:600px){
+    .trainings-box, .packages-box, .book-a-seat-box, .membership-box{
+        -webkit-flex: 75%;
+                flex: 75%; 
+    }
+
+    .top-container img{
+        height: 130px;
+        width: 130px;
+    }
+
+    #trainings-container h2, #packages-container h2{
+        font-size: 350%;
+        letter-spacing: 5px;
+        margin: 30px auto;
+    }
+    
+    #trainings-container p, #packages-container p{
+        line-height: 200%;
+        padding: 35px;
+        margin: 50px auto;
+    }
+
+    .divider{
+        letter-spacing: 2px;
+        padding: 1.5% 20%;
+    }
+
+    .divider h3{
+        padding: 15px 10px;
+        border-right: 8px solid #FFC857;
+        border-left: 8px solid #FFC857;
+    }
+    
+}

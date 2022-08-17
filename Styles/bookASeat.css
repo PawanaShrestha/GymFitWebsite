@@ -1,0 +1,215 @@
+/* Background image as parallax */
+body{
+    background-image: url("../Pictures/thegym2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* the backgound image */
+.back{
+    margin: 150px 0 30px 10px;
+    text-align: left; 
+} 
+
+.back img{
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+}
+
+.back img:hover{
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    transition: 0.5s ease;
+}
+
+.back h3{
+    display: inline-block;
+    box-sizing: content-box;
+    color: #000;
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+    font-size: 200%;
+}
+
+/* styling the form */
+#bookASeatForm{ 
+    display: inline-block;
+    background-color: #212121;
+    padding: 50px 80px;
+    width: 750px; 
+    color: #fff;
+    margin-bottom: 80px; 
+    text-align: left;
+    border-radius: 30px;
+    box-shadow: 8px 8px 15px rgb(255, 255, 255);
+} 
+
+#bookASeatForm label{
+    font-size: larger;
+    margin: 5px 8px;
+}
+
+#bookASeatForm h1{
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #E74C32;
+}
+
+#bookASeatForm Input[type="text"], #bookASeatForm Input[type="email"], #bookASeatForm Input[type="tel"]{
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 5px 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: none;
+}
+
+#bookASeatForm .gender, #bookASeatForm .classType, #bookASeatForm .date, #bookASeatForm .time{
+    display: block;
+    margin: 40px 0;
+    text-align: center;
+}
+
+#bookASeatForm .chooseGender{
+    display: inline-block;
+    margin: 20px 50px 0 0;
+} 
+
+#bookASeatForm .typeOfClass{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#bookASeatForm Input[type="date"]{
+    padding: 10px 30px;
+    margin: 15px 0 20px 0;
+}
+
+#bookASeatForm .timing{
+    margin: 20px 0;
+}
+
+#bookASeatForm .bookButton{
+    text-align: center;
+}
+
+#bookASeatForm .bookButton button{
+    background-color: #08A4BD;
+    padding: 20px 30px;
+    font-weight: bold;
+    font-size: large;
+    transition: .2s linear;
+    margin: 20px 0;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#bookASeatForm .bookButton button:hover{
+    background-color: #ffb92d;
+    padding: 20px 50px;  
+    color: #000;
+}
+
+table{
+    background-color: #212121;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto 80px auto; 
+}
+
+th, td{
+    padding: 16px 24px;
+}
+
+th{
+    background-color: #DAFF7D;
+}
+
+/* selecting only the even rows */
+tr:nth-child(even) {
+    background-color: #984447;
+    color: #fff;
+}
+
+/* selecting onlt the odd rows */
+tr:nth-child(odd) {
+   background-color: #AC8887;
+}
+
+.table_day{
+    background-color: #647AA3;
+}
+
+
+
+
+
+/* CSS to be applied after the screen width become 1200px  */
+@media screen and (max-width:1200px){
+    #bookASeatForm{
+        padding: 45px 25px;
+        width: 580px;
+    } 
+    
+    #bookASeatForm h1{
+        margin-bottom: 40px;
+    }
+    
+    #bookASeatForm Input[type="text"], #bookASeatForm Input[type="email"], #bookASeatForm Input[type="tel"]{
+        margin: 20px 0;
+    }
+
+    table{
+        padding: 25px; 
+    } 
+    
+    th, td{
+        padding: 12px 20px;
+    }
+}
+
+
+
+
+
+
+/* CSS to be applied after the screen width becomes 600px */
+@media screen and (max-width:600px){
+    .back img{
+        height: 30px;
+        width: 50px;
+    }
+    
+    .back h3{
+        font-size: 180%;
+    }
+    
+    #bookASeatForm{
+        padding: 25px 20px;
+        width: 350px;
+    } 
+    
+    #bookASeatForm h1{
+        margin-bottom: 30px;
+    } 
+
+    table{
+        padding: 20px;
+    }
+
+    th, td{
+        padding: 8px 2px;
+    }
+}
+
+
+
+
+
+
+

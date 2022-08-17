@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the style sheets -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/contactus.css">
+    <!-- The browser tab icon -->
+    <link rel="icon" href="Pictures/Icons/Logo.jpg">
+    <title>GYM Fit :: Contact Us</title>
+</head>
+<body>
+    <!-- The page HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="header-logo">
+            <img src="pictures/Logo.png" alt="LOGO" class="logo">
+            <span class="logo_text">GYM FIT</span>
+        </a>
+
+        <!-- The NAVIGATION BAR -->
+        <nav class="main-nav">
+            <ul>
+                <div class="topnav" id="navBar">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="trainings.html">TRAININGS</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <!-- To make the bars functional that appear when the max width is 600px -->
+        <a href="javascript:void(0);" onclick="showNavBars()"> 
+            <img src="Pictures/Icons/bars.png" alt="Bars" class="bars"> 
+        </a>
+    </header>
+
+    <!-- The MAIN BODY PART -->
+    <main>
+        <!-- The ContactUs form -->
+        <section class="contact-us">
+            <form id="contactForm" method="POST">
+                <h1>We would love to hear from you!</h1>
+                <input type="text" placeholder="First Name" id="fname" required>
+                <input type="text" placeholder="Last Name" id="lname" required>
+                <input type="tel" maxlength="10" placeholder="Contact Number" id="contact">
+                <input type="email" placeholder="Email address" id="email">
+                <textarea placeholder="Your message here.." id="message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+            <!-- GYM Fit card pictures front and back -->
+            <div class="card">
+                <img src="Pictures/cardfront.png" alt="card front">
+                <img src="Pictures/cardback.jpg" alt="card back">
+            </div>
+
+            <!-- embedding the google map -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7063.69163093336!2d85.3171098247779!3d27.722046431143248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1919f7dd0685%3A0xc59baa0caae9c83d!2sLazimpat%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1596788754173!5m2!1sen!2snp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+            </div>
+        </section>
+    </main> 
+
+    <!-- The FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li><a href="aboutus.html#GYMFitGallery">GALLERY </a></li>
+                <li><a href="trainings.html#trainings-container">TRAININGS </a></li>
+                <li><a href="trainings.html#packages-container">PACKAGES </a></li>
+                <li><a href="membership.html">MEMBERSHIP </a></li>
+                <li><a href="aboutus.html#trainers">TRAINERS </a></li>
+                <li><a href="shop.html#shop-nutrition">NUTRITION </a></li>
+                <li><a href="shop.html#shop-equipment">EQUIPMENT </a></li>
+            </ul>
+            <a href="bookASeat.html">
+                <h2>BOOK YOUR SEAT NOW!!!</h2>
+            </a>
+        </div>   
+
+        <div class="footer-mid">
+            <div class="footer-mid-left footer-mid-size">
+                <h3>CONNECT WITH US</h3>
+                <!-- social media links that open in a new tab -->
+                <a href="https://www.facebook.com" target="_blank"><img src="Pictures/Icons/facebook.png" alt="fb icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Pictures/Icons/instagram.png" alt="insta icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Pictures/Icons/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pictures/Icons/pinterest.png" alt="pinterest icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="Pictures/Icons/linked in.png" alt="linked in icon"></a>
+            </div>
+
+            <form class="footer-mid-center footer-mid-size" id="emailForNewsletter">
+                <h3>Subscribe to our NEWSLETTER!</h3>
+                <input type="email" placeholder="Your email here..." id="newsletterEmail">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="footer-mid-right footer-mid-size">
+                <h1>GYM FIT</h1>
+                <h3>Lazimpat, Kathmandu</h3>
+                <h3>+977-9818-975-368</h3>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; Copyright 2020. </span>
+            <span style="font-family: 'Audiowide';"> [GYM FIT] </span>
+            <span>, All Rights Reserved.</span>
+        </div>
+    </footer>
+
+
+    <!-- linking the JavaScript files -->
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="JavaScript/gymfit.js"></script>
+    <script src="JavaScript/contactus.js"></script>
+    
+</body>
+</html> 

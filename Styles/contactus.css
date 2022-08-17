@@ -1,0 +1,97 @@
+/* the background image as parallax */
+body{
+    background-image: url("../Pictures/thegym.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+ 
+#contactForm{
+    background-color: #212121;
+    padding: 50px 80px;
+    width: 60%;
+    color: #ffb92d;
+    margin: 130px auto 80px auto; 
+    text-align: left;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8), 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+ 
+#contactForm h1{
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 50px;
+    color: #E74C32;
+    font-size: 200%;
+}
+
+.contact-us Input[type="text"], .contact-us Input[type="email"], .contact-us Input[type="tel"], textarea{
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 5px 30px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: none;
+}
+
+.contact-us textarea{
+    height: 250px;
+    padding-top: 30px;
+}
+
+.contact-us button{
+    background-color: #08A4BD;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: large;
+    transition: .2s linear;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 15px;
+} 
+
+.contact-us button:hover{
+    background-color: #ffb92d;
+    padding: 15px 40px; 
+    color: #000; 
+}
+
+.card img{
+    margin: 0 2%;
+    margin-bottom: 80px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8), 0 6px 20px rgba(255, 255, 255, 0.8);
+}
+
+.map{
+    margin-bottom: -1%;
+}
+
+/* the map width 100% */
+iframe{
+    width: 100%;
+}
+
+
+
+/* CSS to apply when the window max width becomes 1200px */
+@media screen and (max-width:1200px){
+    #contactForm{
+        width: 80%;
+        padding: 45px 70px;
+    }
+}
+
+
+
+/* CSS to apply when the window max width becomes 600px */
+@media screen and (max-width:600px){
+    #contactForm{
+        width: 95%;
+        padding: 30px 50px;
+    }
+
+    .card img{
+        width: 80%;
+    }
+}

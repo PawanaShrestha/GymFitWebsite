@@ -1,0 +1,393 @@
+/* the top container as a parallax */
+.top-container{
+    background-image: url("../Pictures/lifting.jpg");
+    padding: 135px 0 50px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.tag-line{
+    position: relative;
+    /* the container is not visible as it is outside the window on the left side */
+    left: 100%; 
+    transition: .7s ease;
+    margin: 0 auto; 
+    padding: 20px 0 50px 0;
+    font-family: 'Audiowide', cursive;
+    width: 70%;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* the tag line is visible only when the mouse hovers on the top container */
+.top-container:hover .tag-line{
+    left: 0%;
+}
+
+.tag-line h2{
+    font-size: 400%;
+    margin: 2% auto;
+}
+
+.tag-line h3{
+    font-size:250%;
+    margin: 1% auto;
+}
+
+.tag-line h4{
+    display: inline-block;
+    margin: 2% auto;
+    font-size: 250%;
+    border-bottom: 3px solid #E74C32;
+    color: #e74c32;
+}
+
+.tag-line h1{
+    font-size: 500%;
+    color: #ffb92d;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ffc857, 0 0 30px #FFC857;
+    margin: 3% auto 4% auto;
+}
+
+.learn-more{
+    display: inline-block;
+    color: #fff;
+    background-color: #08A4BD;
+    border: 2px solid #fff;
+    padding: 8px 12px;
+}
+
+.learn-more:hover{
+    filter: drop-shadow(4px 4px 3px #fff);
+}
+
+.quote-container{
+    background-color: #000;
+    height: 493px;
+    color: #fff;
+    font-size: 200%;
+    padding: 0 4%;
+}
+
+.quote{
+    width: 60%;
+    display: inline-block;
+    margin: 150px 0;
+}
+
+/* Image of Arnold is set to the right side of the container */
+.Arnold{
+    float: right;
+}
+
+.Arnold img{
+    height: 493px;
+    width: 394.5px;
+}
+
+#aboutus-container{
+    background-image: url("../Pictures/yoga.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus{
+    width: 100%;
+    height: 100%;
+    padding: 8% 20%;
+    line-height: 200%;
+    color: #fff;
+    background-color: rgba(25, 25, 25, 0.8);
+}
+
+.aboutus h1{
+    font-size: xx-large;
+    margin-bottom: 3%;
+    font-family: 'Audiowide', cursive;
+}
+
+.aboutus p{
+    line-height: 350%;
+    padding: 5% 0;
+}
+
+.know-more{
+    background-color: #E74C32;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 20px;
+    transition: .7s ease;
+    margin-top: 3%;
+}
+
+.know-more:hover{
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #E74C32;
+    padding: 2px 80px;
+    filter: drop-shadow(4px 4px 3px #fff);
+}
+
+.video-container{
+    color: #fff;
+    background-color: #000;
+    height: 364px;
+    overflow: hidden;
+    display: flex;
+}
+
+.video{
+    float: left;
+    margin-top: -58px;
+    -webkit-flex: 56.25%;
+            flex: 56.25%;
+}
+
+/* The text beside the video has a parallax background */
+.video-text{
+    background-image: url("../Pictures/equip4.jpg");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Audiowide', cursive;
+    float: right;
+    -webkit-flex: 43.75%;
+            flex: 43.75%;
+    padding: 90px 25px 0 25px;
+    font-size: 200%;
+}
+
+.video-text .vid-txt-trainers{
+    color: #E74C32;
+}
+
+.video-text .vid-txt-trainers:hover{
+    font-size: 110%;
+    color: #fff;
+    transition: 0.5s linear;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.video-text h4{
+    border-bottom: 2px solid #E74C32;
+    padding: 5%;
+}
+
+/* the Reviews container also has a parallax background */
+#reviews-container{
+     background-image: url("../Pictures/weight.jpg");
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* the reviews container is clipped at the bottom for a pentagon shape */
+     -webkit-clip-path: polygon(40% 0, 100% 0, 100% 77%, 50% 100%, 0 77%, 0 0);
+             clip-path: polygon(40% 0, 100% 0, 100% 77%, 50% 100%, 0 77%, 0 0);
+}
+
+.reviews-section{
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 5% 2% 15% 2%;
+    margin-top: -1%;
+}
+
+.reviews-section h2{
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 3%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.reviews{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review{
+    background-color: rgba(200, 200, 200, 0.9);
+    -webkit-flex: 23%;
+            flex: 23%;
+    margin: 0.5%;
+    padding: 2%;
+    line-height: 150%;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.review img{
+    margin-top: -10%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* enlarging the images */
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    box-shadow: 2px 4px 5px #000;
+}
+
+.name{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.stars img{
+    height: 22px;
+    width: 23px;
+    margin: 10px 0;
+    box-shadow: none;
+}
+
+.partners{
+    display: inline-block;
+    width: 100%;
+    margin: 8% 0 5% 0;
+}
+
+.partners h2{
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 50px;
+}
+
+.partners img{
+   height: 250px;
+   width: 250px;
+   margin: 4% 1%;
+   transition: 0.5s ease;
+}
+
+.partners img:hover{
+    box-shadow: 10px 0 7px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+}
+
+
+
+
+/* CSS to be applied when the max width o the window is 1200px */
+@media screen and (max-width:1200px){
+    /* The tag is visible(at its place) from the first */
+    .tag-line{
+        left: 0%;
+    }
+
+    .quote-container{
+        font-size: 180%;
+        padding: 0 2%;
+        height: auto;
+    }
+
+    .quote{
+        width: 100%;
+        margin: 65px 0 40px 0;
+    }
+
+    /* image of Arnold comes below his quote */
+    .Arnold{
+        float: none;
+        margin-bottom: -7px;
+    }
+
+    .video-container{
+        height: auto;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .video{
+        float: none;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .video-text{
+        float: none;
+        width: 100%;
+        padding: 90px 25px 90px 25px;
+    }
+
+    /* the pentagon shaped clip path is removed */
+    #reviews-container{
+        -webkit-clip-path: none;
+                clip-path: none;
+    }
+
+    .reviews-section{
+        margin-bottom: 5%;
+        width: 100%;
+        padding: 10% 2%;
+    }
+
+    .review{
+        flex: 45%;
+        line-height: 120%;
+        margin: 5% 2%;
+    }
+
+    .review img{
+        margin-top: 0;
+    }
+
+    .partners img{
+        height: 180px;
+        width: 180px;
+    }
+}
+
+
+
+
+/* CSS to be applied when the max width of the window is 600px */
+@media screen and (max-width:600px){
+    .tag-line h2{
+        font-size: 200%;
+    }
+
+    .tag-line h3, .tag-line h4{
+        font-size:125%;
+    }
+
+    .tag-line h1{
+        font-size: 250%;
+    }
+
+    .quote-container{
+        height: auto;
+        font-size: 110%;
+    }
+
+    .quote{
+        margin: 40px 0 12px 0;
+    }
+
+    .Arnold img{
+        height: 328.67px;
+        width: 263px;
+        margin-bottom: 2px;
+    }
+
+    video{
+        width: 533.75px;
+        height: 300px;
+    }
+
+    .video-text{
+        font-size: 150%;
+    }
+
+    .review{
+        flex: 90%;
+    }
+
+    .partners img{
+        height: 150px;
+        width: 150px;
+    }
+}

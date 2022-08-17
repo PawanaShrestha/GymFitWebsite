@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linking the style sheets -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/login.css">
+    <!-- The browser tab icon -->
+    <link rel="icon" href="Pictures/Icons/Logo.jpg">
+    <title>GYM Fit :: Login</title>
+</head>
+<body>
+    <!-- The HEADER -->
+    <header class="site-header">
+        <a href="index.html" class="header-logo">
+            <img src="pictures/Logo.png" alt="LOGO" class="logo">
+            <span class="logo_text">GYM FIT</span>
+        </a>
+        <!-- The NAVIGATION BAR -->
+        <nav class="main-nav">
+            <ul>
+                <div class="topnav" id="navBar">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="trainings.html">TRAININGS</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">CONTACT US</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <!-- To make the bars functional that appear when the max width is 600px -->
+        <a href="javascript:void(0);" onclick="showNavBars()"> 
+            <img src="Pictures/Icons/bars.png" alt="Bars" class="bars"> 
+        </a>
+    </header>
+
+    <!-- The MAIN BODY PART -->
+    <main>
+        <!-- The login Form -->
+        <section>
+            <form id="login-form">
+                <h2>Welcome! Please Login to continue.</h2>
+                <input type="email" placeholder="Email" id="email" required>
+                <input type="password" placeholder="Password" id="pw" required>
+                <button type="submit" value="Login">Login</button>
+                <h3>
+                    Do not have an account yet?
+                    <a href="membership.html">Be a GYM Fit Member NOW!!!</a>
+                </h3>
+            </form>
+        </section>
+    </main>
+
+    <!-- The FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <ul> 
+                <li><a href="aboutus.html#GYMFitGallery">GALLERY </a></li>
+                <li><a href="trainings.html#trainings-container">TRAININGS </a></li>
+                <li><a href="trainings.html#packages-container">PACKAGES </a></li>
+                <li><a href="membership.html">MEMBERSHIP </a></li>
+                <li><a href="aboutus.html#trainers">TRAINERS </a></li>
+                <li><a href="shop.html#shop-nutrition">NUTRITION </a></li>
+                <li><a href="shop.html#shop-equipment">EQUIPMENT </a></li>
+            </ul>
+            <a href="bookASeat.html">
+                <h2>BOOK YOUR SEAT NOW!!!</h2>
+            </a>
+        </div>    
+
+        <div class="footer-mid">
+            <div class="footer-mid-left footer-mid-size">
+                <h3>CONNECT WITH US</h3>
+                <!-- Social media links to open in a new tab -->
+                <a href="https://www.facebook.com" target="_blank"><img src="Pictures/Icons/facebook.png" alt="fb icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Pictures/Icons/instagram.png" alt="insta icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Pictures/Icons/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pictures/Icons/pinterest.png" alt="pinterest icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="Pictures/Icons/linked in.png" alt="linked in icon"></a>
+            </div>
+
+            <form class="footer-mid-center footer-mid-size" id="emailForNewsletter">
+                <h3>Subscribe to our NEWSLETTER!</h3>
+                <input type="email" placeholder="Your email here..." id="newsletterEmail">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="footer-mid-right footer-mid-size">
+                <h1>GYM FIT</h1>
+                <h3>Lazimpat, Kathmandu</h3>
+                <h3>+977-9818-975-368</h3>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; Copyright 2020. </span>
+            <span style="font-family: 'Audiowide';"> [GYM FIT] </span>
+            <span>, All Rights Reserved.</span>
+        </div>
+    </footer>
+
+<!-- Links to JavaScript files -->
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="JavaScript/gymfit.js"></script>
+    <script src="JavaScript/login.js"></script>
+</body>
+</html>

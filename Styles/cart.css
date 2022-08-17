@@ -1,0 +1,234 @@
+.back{
+    margin: 150px 0 30px 10px;
+    text-align: left;
+}
+
+.back img{
+    display: inline-block;
+    height: 40px;
+    width: 60px; 
+    transition: 0.3s ease;
+}
+
+/* to enlarge the back arrow on hover */
+.back img:hover{
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+}
+
+.back h3{
+    display: inline-block;
+    box-sizing: content-box;
+    color: #000;
+    /* to align the arrow and the word */
+    -webkit-transform: translate(0, -10px);
+            transform: translate(0, -10px);
+    font-size: 200%;
+}
+
+#cartTable{
+    width: 90%;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 2%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+#cartTable th, #cartTable td{
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#cartTable th{
+    background-color: #56A3A6;
+    color: #fff;
+}
+
+#cartTable img{
+    height: 30%;
+}
+
+#cartTable td{
+    background-color: #C0D8E0;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#cartTable .deletion{
+    background-color: #3FA7E9;
+    color: #fff; 
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+#cartTable .deletion:hover{
+    background-color: #B72E15;
+}
+
+#totalAmount{
+    background-color: #EFC11A;
+    display: block;
+    padding: 30px;
+    margin: 5% 5% 0 5%;
+    font-weight: bold;
+    font-size: x-large;
+    letter-spacing: 1.5px;
+}
+
+#buyNow{
+    margin: 80px 20px;
+    background-color: #E74C32;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 15px;
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+
+#buyNow:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    background-color: #EFC11A;
+}
+
+/* the pop-up when the BUY NOW is clicked */
+#buyDialogBox{
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    z-index: 3;
+    /* pop-up is not displayed. only visible when BUY NOW is clicked */
+    display: none;
+    transition: 0.5s ease;
+}
+
+/* to change the cursor when hovered on the text */
+#anotherAccount{
+    cursor: pointer;
+}
+
+#anotherAccount:hover{
+    color: #054872;
+}
+
+.buyProduct{
+    background-color: rgba(200, 200, 200, 0.8);
+    width: 300px;
+    padding: 3%;
+    border-radius: 20px;
+    color: #000;
+    text-align: left;
+    margin: auto;
+    display: block;
+}
+
+.buyProduct h4{
+    margin-bottom: 20px;
+    color: #E74C32;
+    text-decoration: underline;
+}
+
+.buyProduct h3{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+.buyProduct select{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.buyProduct button{
+    display: block;
+    background-color: #E74C32;
+    padding: 3% 10%;
+    margin: 50% auto 10% auto;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-size: large;
+    transition: 0.5s ease;
+}
+
+.buyProduct button:hover{
+    background-color: #f70C;
+    padding: 3% 16%;
+}
+
+#buyDialogBox .cross{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+}
+
+/* to enlarge the cross button when hovered */
+#buyDialogBox .cross:hover{
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#noItems{
+    background-color: #EFC11A;
+    width: 60%;
+    padding: 5%;
+    border-radius: 15px;
+    margin: 5% auto 8% auto;
+}
+
+#noItems h2{
+    background-color: #E74C32;
+    padding: 20px 50px;
+    color: #fff;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin: 50px auto 0 auto;
+}
+
+#noItems h2:hover{
+    opacity: 0.8;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+
+
+/* CSS to apply when the max-width becomes 600px */
+@media screen and (max-width: 600px){
+
+    #cartTable th, #cartTable td{
+        padding: 8px 5px;
+    }
+
+    #cartTable img{
+        height: 20%;
+    }
+
+    #cartTable td{
+        background-color: #C0D8E0;
+        font-size: smaller;
+    }
+
+    #buyNow{
+        margin: 60px 10px;
+        padding: 15px 30px;
+        border-radius: 15px;
+    } 
+
+    #buyNow:hover{
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+        background-color: #3FA7D9;
+    }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta tag for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style sheets links -->
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/index.css">
+    <!-- The browser tab icon -->
+    <link rel="icon" href="Pictures/Icons/Logo.jpg">
+    <title>GYM Fit :: Home Page</title>
+</head>
+
+
+<body>
+<!-- The HEADER --> 
+    <header class="site-header">
+        <a href="index.html" class="header-logo">
+            <img src="pictures/Logo.png" alt="LOGO" class="logo">
+            <span class="logo_text">GYM FIT</span>
+        </a>
+
+        <!-- The NAVIGATION BAR -->
+        <nav class="main-nav">
+            <ul>
+                <div class="topnav" id="navBar">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="trainings.html">TRAININGS</a>
+                    </li>
+                    <li>
+                        <a href="shop.html">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">CONTACT US</a>
+                    </li> 
+                </div>
+            </ul>
+        </nav>
+        <!-- To make the bars functional that appear when the max width is 600px -->
+        <a onclick="showNavBars()"> 
+            <img src="Pictures/Icons/bars.png" alt="Bars" class="bars"> 
+        </a>
+    </header>
+
+    <!-- The MAIN PART of the body -->
+    <main>
+        <!-- The TAG LINE section -->
+        <section>
+            <div class="top-container">
+                <div class="tag-line">
+                    <h4>GYM FIT</h4>
+                    <h2>FITNESS</h2>
+                    <h3>IS A</h3>
+                    <h1>POWER</h1>
+                    <a href="#aboutus-container">
+                        <span class="learn-more">Learn More</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- ARNOLD SCHWARZENEGGER quote -->
+        <section>
+            <div class="quote-container">
+                <div class="quote">
+                    <h3>"IF I CAN SEE IT AND BELIEVE IT, THEN I CAN<span style="color: red;"> ACHIEVE IT</span>."</h3>
+                    <h6 style="margin-top: 5%; text-align: right;">- Arnold Schwarzenegger</h6>
+                </div>
+
+                <div class="Arnold">
+                    <img src="pictures/ArnoldSchwar.jpg" alt="Arnold">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US snippet -->
+        <section>
+            <div id="aboutus-container">
+                <div class="aboutus">
+                    <h1>About Us</h1>
+                    <p>
+                        Fitness is  a POWER. Commenced with this motto, our GYM Fit provides training and packages to our customers.
+                        GYM Fit has qualified training and flexible timings for anyone interested. 
+                        You can also find gym equipment and nutrition here and shop at any time. 
+                        Our unique facility provides our GYM Fit members to get their tailored training from our qualified trainers and get a fit body for themselves.
+                        We have specific timings for training while anyone enrolled in any kind of package will have the timings accordingly. 
+                        Be a member of our GYM Fit and experience our top-class facilities.
+                    </p>
+                    <a href="aboutus.html">
+                        <h3 class="know-more">Get to know about the <span style="font-family: 'Audiowide', cursive;">GYM FIT</span></h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRAINING VIDEO -->
+        <section class="video-container">
+            <div class="video">
+                <video src="pictures/trainer.mp4" autoplay muted loop>
+                </video>
+            </div>
+
+            <div class="video-text">
+                <h6>Get your tailored training ready from</h6>
+                <!-- Link to the trainers section of about us page -->
+                <h4>OUR QUALIFIED <a href="aboutus.html#trainers" class="vid-txt-trainers">TRAINERS</a></h4>
+            </div>
+        </section> 
+
+        <!-- The REVIEWS section -->
+        <section id="reviews-container">
+            <div class="reviews-section">
+                <h2>Reviews from our members</h2>
+                <div class="reviews">
+                    <div class="review">
+                        <img src="Pictures/People/Sauharda.jpg" alt="Sauharda Dhakal">
+                        <div class="name">
+                            <h3>Sauharda Rana</h3>
+                            <!-- Rating Stars-->
+                            <div class="stars">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <p>
+                            The GYM Fit has the best trainers, place and equipments. 
+                            It is the most suitable place for someone like me who has always been a fitness freak. 
+                        </p>
+                    </div>
+                    <div class="review">
+                        <img src="Pictures/People/Amalia.jpg" alt="Amalia Pandey">
+                        <div class="name">
+                            <h3>Amalia Pandey</h3>
+                            <!-- Rating Stars-->
+                            <div class="stars">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <p>
+                            The flexible timings and availability of tailored trainings makes the gym really unique from others. 
+                            Moreover, the trainers are very qualified.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <img src="Pictures/People/Shristi.jpg" alt="Shristi Joshi">
+                        <div class="name">
+                            <h3>Shristi Joshi</h3>
+                            <!-- Rating Stars-->
+                            <div class="stars">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                            </div>
+                        </div>
+                        <p>
+                            I get all my nutrition and equipment from the GYM Fit shop. 
+                            GYM Fit has all the required quality products and they have a great customer service.
+                        </p>
+                    </div>
+                    <div class="review">
+                        <img src="Pictures/People/Raish.jpg" alt="Raish Shrestha">
+                        <div class="name">
+                            <h3>Raish Shrestha</h3>
+                            <!-- Rating Stars-->
+                            <div class="stars">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/coloredstar.png" alt="Colored Star">
+                                <img src="Pictures/Icons/star.png" alt="Star">
+                            </div>
+                        </div>
+                        <p> 
+                            The big halls and all required equipment at hand is the prominent feature of the GYM Fit.
+                            I cannot deny that it is the best gym in the town.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The PARTNERS section -->
+        <section>
+            <div class="bottom-container">
+                <div class="partners">
+                    <h2>Our <u>PARTNERS</u></h2>
+                    <!-- GYM Fit partner links that open in a new tab -->
+                    <a href="https://proteinhouse.com.np/" target="_blank">
+                        <img src="Pictures/Partners/proteinhouse.jpg" alt="Protein House">
+                    </a>
+                    <a href="https://www.instagram.com/hacer__co/" target="_blank">
+                        <img src="Pictures/Partners/hacer.jpg" alt="Hacer">
+                    </a>
+                    <a href="https://www.facebook.com/ashokfitnessequipments/" target="_blank">
+                        <img src="Pictures/Partners/ashok.jpg" alt="Ashok">
+                    </a>
+                    <a href="https://gorkhaaesthetics.com/" target="_blank">
+                        <img src="Pictures/Partners/gorkha-aesthetics.jpg" alt="Gorkha Aesthetics">
+                    </a>
+                    <a href="https://www.facebook.com/healthmart4u/photos/a.625736224213898/1552523788201799/?type=1&theater" target="_blank">
+                        <img src="Pictures/Partners/healthmart.jpg" alt="Health Mart">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+<!-- The FOOTER -->
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li><a href="aboutus.html#GYMFitGallery">GALLERY </a></li>
+                <li><a href="trainings.html#trainings-container">TRAININGS </a></li>
+                <li><a href="trainings.html#packages-container">PACKAGES </a></li>
+                <li><a href="membership.html">MEMBERSHIP </a></li>
+                <li><a href="aboutus.html#trainers">TRAINERS </a></li>
+                <li><a href="shop.html#shop-nutrition">NUTRITION </a></li>
+                <li><a href="shop.html#shop-equipment">EQUIPMENT </a></li>
+            </ul>
+            <a href="bookASeat.html">
+                <h2>BOOK YOUR SEAT NOW!!!</h2>
+            </a>
+        </div>   
+
+        <div class="footer-mid">
+            <div class="footer-mid-left footer-mid-size">
+                <h3>CONNECT WITH US</h3>
+                <!-- social media links that open in a new tab -->
+                <a href="https://www.facebook.com" target="_blank"><img src="Pictures/Icons/facebook.png" alt="fb icon"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="Pictures/Icons/instagram.png" alt="insta icon"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="Pictures/Icons/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.pinterest.com" target="_blank"><img src="Pictures/Icons/pinterest.png" alt="pinterest icon"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="Pictures/Icons/linked in.png" alt="linked in icon"></a>
+            </div>
+
+            <form class="footer-mid-center footer-mid-size" id="emailForNewsletter">
+                <h3>Subscribe to our NEWSLETTER!</h3>
+                <input type="email" placeholder="Your email here..." id="newsletterEmail">
+                <button type="submit">Subscribe</button>
+            </form>
+
+            <div class="footer-mid-right footer-mid-size">
+                <h1>GYM FIT</h1>
+                <h3>Lazimpat, Kathmandu</h3>
+                <h3>+977-9818-975-368</h3>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; Copyright 2020. </span>
+            <span style="font-family: 'Audiowide';"> [GYM FIT] </span>
+            <span>, All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!-- links to the JavaScript files -->
+    <script src="https://unpkg.com/axios@0.19.2/dist/axios.min.js"></script>
+    <script src="JavaScript/gymfit.js"></script>
+    
+</body>
+</html>
